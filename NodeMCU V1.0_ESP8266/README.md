@@ -14,8 +14,7 @@
 * (1) 웹 시리얼 만들기 포트:81
 ***
 # [보드 ESP8266]
-![](/img/IMG_5590.png)
-![보드](/img/ESP8266-ESP-12E-chip-pinout-gpio-pin.png)
+![보드](img/IMG_5590.png)
 ***
 # [추가 라이브러리]
 ### [WiFiManager](https://github.com/tzapu/WiFiManager)
