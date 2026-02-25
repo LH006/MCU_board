@@ -13,18 +13,18 @@
 # [추가예정]
 * (1) 웹 시리얼 만들기 포트:81
 ***
-# [보드 ESP8266]
-![](/img/IMG_5590.png)
-![보드](/img/ESP8266-ESP-12E-chip-pinout-gpio-pin.png)
+# [보드 ]
+![](img/1.png)
+![](img/2.png)
+![보드](img/WenosD1R32_.jpg)
 ***
-# [추가 라이브러리]
+# []
 ### [WiFiManager](https://github.com/tzapu/WiFiManager)
-* Wifi 설정 값 변경
+* Wifi
 ```
 ```
 ### [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
 * 웹 소켓 사용
-* [예제1](https://cafe.naver.com/common/storyphoto/viewer.html?src=https%3A%2F%2Fcafeptthumb-phinf.pstatic.net%2FMjAyMjEyMjlfMTc4%2FMDAxNjcyMzAwNDc2NTY5.WRynss1fsH36OTBMEfMBL4g_uS6Phy2PBpZVnO0YAa4g.ta3hVujy6MF7MQlMMorXGClAV6tBj5kZoDff2IL7k1cg.JPEG%2FWenosD1R32_.jpg%3Ftype%3Dw1600)
 ***
 ## [즐겨찾기]
 * https://cafe.naver.com/lsg20004/873
