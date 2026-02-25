@@ -24,7 +24,7 @@
 ```
 ### [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
 * 웹 소켓 사용
-* [예제1)](http://tzapu.github.io/WebSocketSerialMonitor/)
+* [예제1](https://cafe.naver.com/common/storyphoto/viewer.html?src=https%3A%2F%2Fcafeptthumb-phinf.pstatic.net%2FMjAyMjEyMjlfMTc4%2FMDAxNjcyMzAwNDc2NTY5.WRynss1fsH36OTBMEfMBL4g_uS6Phy2PBpZVnO0YAa4g.ta3hVujy6MF7MQlMMorXGClAV6tBj5kZoDff2IL7k1cg.JPEG%2FWenosD1R32_.jpg%3Ftype%3Dw1600)
 ***
 ## [즐겨찾기]
 * https://cafe.naver.com/lsg20004/873
