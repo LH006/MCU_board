@@ -7,25 +7,38 @@
 * [라이브러리](#추가-라이브러리)
 * [즐겨찾기](#즐겨찾기)
 ***
-# [설명서]
-* (1)
-*
 # [추가예정]
 * (1) 웹 시리얼 만들기 포트:81
 ***
 # [보드 ESP8266]
 ![보드](img/IMG_5590.png)
+
+# []
+Module with build in ESP-12E with PCB antenna
+WiFi connectivity: 802.11 b/g/n
+Modes: (Access Point), STA (Standalone), AP+STA
+Supports: TKIP, WEP, CRC, CCMP, WPA/WPA2, WPS
+Supply voltage: 3.3V (or 5V via micro USB port)
+CPU: RISC 80MHz (overclockable to 160MHz)
+/10 GPIO - PWM 
+
+​
+
+/ I2C
+https://cafe.naver.com/lsg20004/884
+ / SPI 
+/ 1-Wire
+Max current on I/O pins: 12mA
+USB-UART converter - CH340
+Build in ADC - 10-bitowy
+30 pins in 2,54mm raster
+micro USB socket
+Size: 58 x 30mm
+
+# []
+https://arduino-esp8266.readthedocs.io/en/latest/installing.html#id1
 ***
-# [추가 라이브러리]
-### [WiFiManager](https://github.com/tzapu/WiFiManager)
-* Wifi 설정 값 변경
-```
-```
-### [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
-* 웹 소켓 사용
-* [예제1)](http://tzapu.github.io/WebSocketSerialMonitor/)
-***
-## [즐겨찾기]
+# [즐겨찾기]
 * https://cafe.naver.com/lsg20004/873
 * https://cafe.naver.com/lh0006/2292
 ***
