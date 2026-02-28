@@ -8,7 +8,7 @@
 * (1) 웹 시리얼 만들기 포트:81
 ***
 # [보드 ESP8266]
-![보드](img/Arduino Pro Mini.png)
+![보드](img/Arduino%Pro%Mini.png)
 
 # []
 출력:14개(PWM 6개)
