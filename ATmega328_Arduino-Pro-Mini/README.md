@@ -7,12 +7,44 @@
 # [추가예정]
 * (1) 웹 시리얼 만들기 포트:81
 ***
-# [보드 ESP8266]
+# [보드 Arduino-Pro-Mini]
+*  MCU : ATmega328
 ![보드](img/Arduino%Pro%Mini.png)
+---
+# [PIN MAP]
+![보드](img/991FCB355AB2EA8F2B.png)
 
-# []
+Physical Pin(물리적인 핀) 보드 숫자
+1 // FTDI-TXD		// PD1
+0 // FTDI-RXD		// PD0
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+
+A0
+A1
+A2
+A3
+
+
+1 // FTDI-TXD		// PD1
+0 // FTDI-RXD		// PD0
+FTDI-VCC
+FTDI-GND
+
+
+
+
 출력:14개(PWM 6개)
-
 6개의 PWM 포트(D3, D5, D6, D9, D10, D11)
 PWM=3,5,6,9,10,11
 1=PWM
