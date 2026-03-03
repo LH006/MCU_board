@@ -20,16 +20,17 @@
 * Supports: TKIP, WEP, CRC, CCMP, WPA/WPA2, WPS
 * Supply voltage: 3.3V (or 5V via micro USB port)
 * CPU: RISC 80MHz (overclockable to 160MHz)
-* /10 GPIO - PWM
+* 10 bit GPIO - PWM
 
 ​
 
-/ I2C
+
 https://cafe.naver.com/lsg20004/884
- / SPI 
-/ 1-Wire
-Max current on I/O pins: 12mA
-USB-UART converter - CH340
+* I2C
+* SPI 
+* 1-Wire
+* Max current on I/O pins: 12mA
+* USB-UART converter - CH340
 Build in ADC - 10-bitowy
 30 pins in 2,54mm raster
 micro USB socket
