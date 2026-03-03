@@ -14,13 +14,13 @@
 ![보드](img/IMG_5590.png)
 
 # []
-Module with build in ESP-12E with PCB antenna
-WiFi connectivity: 802.11 b/g/n
-Modes: (Access Point), STA (Standalone), AP+STA
-Supports: TKIP, WEP, CRC, CCMP, WPA/WPA2, WPS
-Supply voltage: 3.3V (or 5V via micro USB port)
-CPU: RISC 80MHz (overclockable to 160MHz)
-/10 GPIO - PWM 
+* Module with build in ESP-12E with PCB antenna
+* WiFi connectivity: 802.11 b/g/n
+* Modes: (Access Point), STA (Standalone), AP+STA
+* Supports: TKIP, WEP, CRC, CCMP, WPA/WPA2, WPS
+* Supply voltage: 3.3V (or 5V via micro USB port)
+* CPU: RISC 80MHz (overclockable to 160MHz)
+* /10 GPIO - PWM
 
 ​
 
