@@ -7,7 +7,7 @@
 ## [추가예정]
 * 
 ***
-## [보드 Arduino-Pro-Mini]
+## [보드 정보]
 *  MCU : ATmega328
 * 
 ---
