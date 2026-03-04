@@ -10,7 +10,7 @@
 * [즐겨찾기](#즐겨찾기)
 ***
 # [설명서]
-* (1)
+* [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
 *
 # [추가예정]
 * (1)
