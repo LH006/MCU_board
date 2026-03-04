@@ -9,7 +9,7 @@
 ***
 # [보드 Arduino-Pro-Mini]
 *  MCU : ATmega328
-![보드](img/Arduino%Pro%Mini.png)
+* 
 ---
 # [PIN MAP]
 ![보드](img/991FCB355AB2EA8F2B.png)
