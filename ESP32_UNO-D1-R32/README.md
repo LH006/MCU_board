@@ -1,9 +1,11 @@
-# WEB 스위치 On/OFF 제어
+# ESPDuino-32
+* Wemos D1 R32
+* 
 ***
 # [목록]
 * [설명서](#설명서)
 * [추가예정](#추가예정)
-* [보드정보](#보드-ESP8266)
+* [보드정보](#보드정보)
 * [라이브러리](#추가-라이브러리)
 * [즐겨찾기](#즐겨찾기)
 ***
@@ -19,19 +21,29 @@
 ![보드](img/WenosD1R32_.jpg)
 ***
 # []
-### [WiFiManager](https://github.com/tzapu/WiFiManager)
+보드 구성
+* Arduino Uno Shield와 호환
+* 6개의 ADC 채널
+* 2개의 DAC 채널
+* PWM 장치 2개, 총 7개 채널
+* 1 x SPI 장치
+* 1 x I2C 장치
+* 2개의 UART 장치
+
+### [라이브러리]
+* [WiFiManager](https://github.com/tzapu/WiFiManager)
 * Wifi
-```
-```
-### [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
+* [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
 * 웹 소켓 사용
 ***
 ## [즐겨찾기]
 * https://cafe.naver.com/lsg20004/873
 * https://cafe.naver.com/lh0006/2292
 ***
-```
 
+## [핀 배열]
+* arduino_iomap.h
+```
 arduino_iomap.h
 Go to the documentation of this file.
 /*
