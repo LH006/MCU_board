@@ -1,5 +1,5 @@
-# ESP8266_NodeMCU V1.0
-## (ESP-12E Module)
+# NodeMCU V1.0
+## ESP8266(ESP-12E Module)
 ***
 # [목록]
 * [설명서](#설명서)
