@@ -31,6 +31,104 @@
 * https://cafe.naver.com/lh0006/2292
 ***
 ```
+
+arduino_iomap.h
+Go to the documentation of this file.
+/*
+ * SPDX-FileCopyrightText: 2025 Gunar Schorcht
+ * SPDX-License-Identifier: LGPL-2.1-only
+ */
+ 
+#pragma once
+ 
+#include "periph/gpio.h"
+#include "periph/adc.h"
+ 
+#ifdef __cplusplus
+extern "C" {
+#endif
+ 
+#define ARDUINO_UART_D0D1       UART_DEV(0) 
+#define ARDUINO_SPI_D11D12D13   SPI_DEV(0)  
+#define ARDUINO_I2C_UNO         I2C_DEV(0)  
+#define ARDUINO_LED             14          
+#define ARDUINO_PIN_0   GPIO3       
+#define ARDUINO_PIN_1   GPIO1       
+ 
+#define ARDUINO_PIN_2   GPIO26      
+#define ARDUINO_PIN_3   GPIO25      
+#define ARDUINO_PIN_4   GPIO17      
+#define ARDUINO_PIN_5   GPIO16      
+#define ARDUINO_PIN_6   GPIO27      
+#define ARDUINO_PIN_7   GPIO14      
+#define ARDUINO_PIN_8   GPIO12      
+#define ARDUINO_PIN_9   GPIO13      
+ 
+#define ARDUINO_PIN_10  GPIO5       
+#define ARDUINO_PIN_11  GPIO23      
+#define ARDUINO_PIN_12  GPIO19      
+#define ARDUINO_PIN_13  GPIO18      
+ 
+/* analog pins as digital pin: */
+#define ARDUINO_PIN_14  GPIO2       
+#define ARDUINO_PIN_15  GPIO4       
+#define ARDUINO_PIN_16  GPIO35      
+#define ARDUINO_PIN_17  GPIO34      
+#define ARDUINO_PIN_18  GPIO36      
+#define ARDUINO_PIN_19  GPIO39      
+ 
+/* I2C pins as digital pins */
+#define ARDUINO_PIN_20  GPIO21      
+#define ARDUINO_PIN_21  GPIO22      
+ 
+#define ARDUINO_PIN_LAST    21      
+#define ARDUINO_PIN_A0      ARDUINO_PIN_14   
+#define ARDUINO_PIN_A1      ARDUINO_PIN_15   
+#define ARDUINO_PIN_A2      ARDUINO_PIN_16   
+#define ARDUINO_PIN_A3      ARDUINO_PIN_17   
+#define ARDUINO_PIN_A4      ARDUINO_PIN_18   
+#define ARDUINO_PIN_A5      ARDUINO_PIN_19   
+ 
+#define ARDUINO_PIN_DAC0    ARDUINO_PIN_3    
+#define ARDUINO_PIN_DAC1    ARDUINO_PIN_2    
+#define ARDUINO_A0          ADC_LINE(0)     
+#define ARDUINO_A1          ADC_LINE(1)     
+#define ARDUINO_A2          ADC_LINE(2)     
+#define ARDUINO_A3          ADC_LINE(3)     
+#define ARDUINO_A4          ADC_LINE(4)     
+#define ARDUINO_A5          ADC_LINE(5)     
+ 
+#define ARDUINO_ANALOG_PIN_LAST 5           
+#define ARDUINO_DAC0        DAC_LINE(0)     
+#define ARDUINO_DAC1        DAC_LINE(1)     
+ 
+#define ARDUINO_DAC_PIN_LAST    1           
+#define ARDUINO_PIN_3_PWM_DEV   PWM_DEV(0)  
+#define ARDUINO_PIN_3_PWM_CHAN  0           
+ 
+#define ARDUINO_PIN_5_PWM_DEV   PWM_DEV(0)  
+#define ARDUINO_PIN_5_PWM_CHAN  1           
+ 
+#define ARDUINO_PIN_6_PWM_DEV   PWM_DEV(0)  
+#define ARDUINO_PIN_6_PWM_CHAN  2           
+ 
+#define ARDUINO_PIN_9_PWM_DEV   PWM_DEV(0)  
+#define ARDUINO_PIN_9_PWM_CHAN  3           
+ 
+#define ARDUINO_PIN_10_PWM_DEV  PWM_DEV(1)  
+#define ARDUINO_PIN_10_PWM_CHAN 0           
+ 
+#define ARDUINO_PIN_11_PWM_DEV  PWM_DEV(1)  
+#define ARDUINO_PIN_11_PWM_CHAN 1           
+ 
+#ifdef __cplusplus
+}
+#endif
+
+```
+
+
+```
 Definition in file arduino_iomap.h.
 
 #include "periph/gpio.h"
