@@ -1,17 +1,17 @@
 # 
 ***
-# [목록]
+## [목록]
 * [설명서](#설명서)
 
 ***
-# [추가예정]
+## [추가예정]
 * (1) 웹 시리얼 만들기 포트:81
 ***
-# [보드 Arduino-Pro-Mini]
+## [보드 Arduino-Pro-Mini]
 *  MCU : ATmega328
 * 
 ---
-# [PIN MAP]
+## [PIN MAP]
 ![보드](img/991FCB355AB2EA8F2B.png)
 
 Physical Pin(물리적인 핀) 보드 숫자
