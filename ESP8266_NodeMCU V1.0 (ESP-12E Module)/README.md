@@ -1,4 +1,5 @@
-# WEB 스위치 On/OFF 제어
+# ESP8266_NodeMCU V1.0
+## (ESP-12E Module)
 ***
 # [목록]
 * [설명서](#설명서)
@@ -8,7 +9,7 @@
 * [즐겨찾기](#즐겨찾기)
 ***
 # [추가예정]
-* (1) 웹 시리얼 만들기 포트:81
+* (1)
 ***
 # [보드 ESP8266]
 ![보드](img/IMG_5590.png)
@@ -21,8 +22,6 @@
 * Supply voltage: 3.3V (or 5V via micro USB port)
 * CPU: RISC 80MHz (overclockable to 160MHz)
 * 10 bit GPIO - PWM
-
-​
 
 
 https://cafe.naver.com/lsg20004/884
