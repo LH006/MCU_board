@@ -33,10 +33,10 @@
 ### 내부 VCC 측정 방법 (A0 핀 연결 X)
 * 외부 전압 분배 회로 없이 ESP8266 칩 자체의 공급 전압을 확인하고 싶다면 아래 코드.
 * 이 경우 A0 핀은 아무것도 연결하지 않은 상태(Floating)여야 합니다
-'''
+```
 ADC_MODE(ADC_VCC); // 함수 밖 상단에 선언
 void loop() {
   float vcc = ESP.getVcc() / 1000.0; // mV 단위를 V로 변환
   Serial.print("VCC Voltage: ");
   Serial.println(vcc);
-'''
+```
