@@ -13,7 +13,7 @@
 * [추가예정](#추가예정)
 
 ***
-# [설명서]< id="a">
+# [설명서](< id="a">)
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
 *
 
