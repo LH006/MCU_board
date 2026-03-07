@@ -4,19 +4,24 @@
 ***
 # [목록]
 * [설명서](#설명서)
-* [추가예정](#추가예정)
-* [보드정보](#보드정보)
+* [보드](#보드)
+* [회로도](#회로도)
+* [보드 구성](#보드-구성)
 * [라이브러리](#추가-라이브러리)
 * [즐겨찾기](#즐겨찾기)
+* [핀 배열](#핀-배열)
+* [추가예정](#추가예정)
+
 ***
 # [설명서]
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
 *
-# [추가예정]
-* (1)
+
 ***
-# [보드 ]
+# [보드]
 ![](img/2.png)
+
+# [회로도]
 ![보드](img/WenosD1R32_.jpg)
 ![](img/1.png)
 ***
@@ -29,18 +34,19 @@
 * 1 x I2C 장치
 * 2개의 UART 장치
 
-### [라이브러리]
+# [라이브러리]
 * [WiFiManager](https://github.com/tzapu/WiFiManager)
 * Wifi
 * [WebSocketSerialMonitor](https://github.com/tzapu/WebSocketSerialMonitor)
 * 웹 소켓 사용
 ***
-## [즐겨찾기]
+# [즐겨찾기]
 * https://cafe.naver.com/lsg20004/873
 * https://cafe.naver.com/lh0006/2292
 ***
 
-## [핀 배열]
+# [핀 배열]
+![](img/3_Pinout_D1_R32.png)
 * arduino_iomap.h
 ```
 arduino_iomap.h
@@ -66,19 +72,19 @@ extern "C" {
 #define ARDUINO_PIN_0   GPIO3       
 #define ARDUINO_PIN_1   GPIO1       
  
-#define ARDUINO_PIN_2   GPIO26      
-#define ARDUINO_PIN_3   GPIO25      
-#define ARDUINO_PIN_4   GPIO17      
-#define ARDUINO_PIN_5   GPIO16      
-#define ARDUINO_PIN_6   GPIO27      
-#define ARDUINO_PIN_7   GPIO14      
-#define ARDUINO_PIN_8   GPIO12      
-#define ARDUINO_PIN_9   GPIO13      
+#define ARDUINO_PIN_2   GPIO26
+#define ARDUINO_PIN_3   GPIO25
+#define ARDUINO_PIN_4   GPIO17
+#define ARDUINO_PIN_5   GPIO16
+#define ARDUINO_PIN_6   GPIO27
+#define ARDUINO_PIN_7   GPIO14
+#define ARDUINO_PIN_8   GPIO12
+#define ARDUINO_PIN_9   GPIO13
  
-#define ARDUINO_PIN_10  GPIO5       
-#define ARDUINO_PIN_11  GPIO23      
-#define ARDUINO_PIN_12  GPIO19      
-#define ARDUINO_PIN_13  GPIO18      
+#define ARDUINO_PIN_10  GPIO5
+#define ARDUINO_PIN_11  GPIO23
+#define ARDUINO_PIN_12  GPIO19
+#define ARDUINO_PIN_13  GPIO18
  
 /* analog pins as digital pin: */
 #define ARDUINO_PIN_14  GPIO2       
@@ -93,12 +99,12 @@ extern "C" {
 #define ARDUINO_PIN_21  GPIO22      
  
 #define ARDUINO_PIN_LAST    21      
-#define ARDUINO_PIN_A0      ARDUINO_PIN_14   
-#define ARDUINO_PIN_A1      ARDUINO_PIN_15   
-#define ARDUINO_PIN_A2      ARDUINO_PIN_16   
-#define ARDUINO_PIN_A3      ARDUINO_PIN_17   
-#define ARDUINO_PIN_A4      ARDUINO_PIN_18   
-#define ARDUINO_PIN_A5      ARDUINO_PIN_19   
+#define ARDUINO_PIN_A0      ARDUINO_PIN_14   // GPIO2
+#define ARDUINO_PIN_A1      ARDUINO_PIN_15   // GPIO4
+#define ARDUINO_PIN_A2      ARDUINO_PIN_16   // GPIO35
+#define ARDUINO_PIN_A3      ARDUINO_PIN_17   // GPIO34
+#define ARDUINO_PIN_A4      ARDUINO_PIN_18   // GPIO36 
+#define ARDUINO_PIN_A5      ARDUINO_PIN_19   // GPIO39
  
 #define ARDUINO_PIN_DAC0    ARDUINO_PIN_3    
 #define ARDUINO_PIN_DAC1    ARDUINO_PIN_2    
@@ -146,49 +152,22 @@ Definition in file arduino_iomap.h.
 #include "periph/adc.h"
 Go to the source code of this file.
 
-#define 	ARDUINO_UART_D0D1   UART_DEV(0)
- 	Arduino UART interface.
- 
-#define 	ARDUINO_SPI_D11D12D13   SPI_DEV(0)
- 	Arduino SPI bus.
- 
-#define 	ARDUINO_I2C_UNO   I2C_DEV(0)
- 	Arduino I2C bus.
- 
-#define 	ARDUINO_LED   14
- 	LED is connected to Arduino pin 14.
- 
+#define 	ARDUINO_UART_D0D1   UART_DEV(0)		// Arduino UART interface.
+#define 	ARDUINO_SPI_D11D12D13   SPI_DEV(0)	// Arduino SPI bus.
+#define 	ARDUINO_I2C_UNO   I2C_DEV(0)		// Arduino I2C bus.
+#define 	ARDUINO_LED   14					// LED is connected to Arduino pin 14.
+
 Mapping of MCU pins to Arduino pins
-#define 	ARDUINO_PIN_0   GPIO3
- 	Arduino pin 0 (RxD)
- 
-#define 	ARDUINO_PIN_1   GPIO1
- 	Arduino pin 1 (TxD)
- 
-#define 	ARDUINO_PIN_2   GPIO26
- 	Arduino pin 2 (DAC1)
- 
-#define 	ARDUINO_PIN_3   GPIO25
- 	Arduino pin 3 (PWM / DAC0)
- 
-#define 	ARDUINO_PIN_4   GPIO17
- 	Arduino pin 4.
- 
-#define 	ARDUINO_PIN_5   GPIO16
- 	Arduino pin 5 (PWM)
- 
-#define 	ARDUINO_PIN_6   GPIO27
- 	Arduino pin 6 (PWM)
- 
-#define 	ARDUINO_PIN_7   GPIO14
- 	Arduino pin 7.
- 
-#define 	ARDUINO_PIN_8   GPIO12
- 	Arduino pin 8.
- 
-#define 	ARDUINO_PIN_9   GPIO13
- 	Arduino pin 9 (PWM)
- 
+#define 	ARDUINO_PIN_0   GPIO3				// Arduino pin 0 (RxD)
+#define 	ARDUINO_PIN_1   GPIO1				// Arduino pin 1 (TxD)
+#define 	ARDUINO_PIN_2   GPIO26				// Arduino pin 2 (DAC1)
+#define 	ARDUINO_PIN_3   GPIO25				// Arduino pin 3 (PWM / DAC0)
+#define 	ARDUINO_PIN_4   GPIO17				// Arduino pin 4.
+#define 	ARDUINO_PIN_5   GPIO16				// Arduino pin 5 (PWM)
+#define 	ARDUINO_PIN_6   GPIO27				// Arduino pin 6 (PWM)
+#define 	ARDUINO_PIN_7   GPIO14				// Arduino pin 7
+#define 	ARDUINO_PIN_8   GPIO12				// Arduino pin 8
+#define 	ARDUINO_PIN_9   GPIO13				// Arduino pin 9 (PWM)
 #define 	ARDUINO_PIN_10   GPIO5
  	Arduino pin 10 (CS0 / PWM)
  
@@ -250,81 +229,38 @@ Aliases for analog pins
 #define 	ARDUINO_PIN_DAC0   ARDUINO_PIN_3
  	Arduino pin D3.
  
-#define 	ARDUINO_PIN_DAC1   ARDUINO_PIN_2
- 	Arduino pin D2.
- 
+#define 	ARDUINO_PIN_DAC1   ARDUINO_PIN_2		// Arduino pin D2.
+
 Mapping of Arduino analog pins to RIOT ADC lines
-#define 	ARDUINO_A0   ADC_LINE(0)
- 	ADC line for Arduino pin A0.
- 
-#define 	ARDUINO_A1   ADC_LINE(1)
- 	ADC line for Arduino pin A1.
- 
-#define 	ARDUINO_A2   ADC_LINE(2)
- 	ADC line for Arduino pin A2.
- 
-#define 	ARDUINO_A3   ADC_LINE(3)
- 	ADC line for Arduino pin A3.
- 
-#define 	ARDUINO_A4   ADC_LINE(4)
- 	ADC line for Arduino pin A4.
- 
-#define 	ARDUINO_A5   ADC_LINE(5)
- 	ADC line for Arduino pin A5.
- 
-#define 	ARDUINO_ANALOG_PIN_LAST   5
- 	Last Arduino analog pin index.
+#define 	ARDUINO_A0   ADC_LINE(0)				// ADC line for Arduino pin A0.
+#define 	ARDUINO_A1   ADC_LINE(1)				// ADC line for Arduino pin A1.
+#define 	ARDUINO_A2   ADC_LINE(2)				// ADC line for Arduino pin A2.
+#define 	ARDUINO_A3   ADC_LINE(3)				// ADC line for Arduino pin A3.
+#define 	ARDUINO_A4   ADC_LINE(4)				// ADC line for Arduino pin A4.
+#define 	ARDUINO_A5   ADC_LINE(5)				// ADC line for Arduino pin A5.
+#define 	ARDUINO_ANALOG_PIN_LAST   5				// Last Arduino analog pin index.
  
 Mapping of Arduino DAC pins to RIOT DAC lines
-#define 	ARDUINO_DAC0   DAC_LINE(0)
- 	DAC line for Arduino DAC0 pin.
- 
-#define 	ARDUINO_DAC1   DAC_LINE(1)
- 	DAC line for Arduino DAC1 pin.
- 
-#define 	ARDUINO_DAC_PIN_LAST   1
- 	Last Arduino DAC pin index.
- 
+#define 	ARDUINO_DAC0   DAC_LINE(0)				// DAC line for Arduino DAC0 pin.
+#define 	ARDUINO_DAC1   DAC_LINE(1)				// DAC line for Arduino DAC1 pin.
+#define 	ARDUINO_DAC_PIN_LAST   1				// Last Arduino DAC pin index.
+
 Mapping of Arduino pins to RIOT PWM dev and channel pairs
-#define 	ARDUINO_PIN_3_PWM_DEV   PWM_DEV(0)
- 	PWM device for Arduino pin 3.
- 
-#define 	ARDUINO_PIN_3_PWM_CHAN   0
- 	PWM channel for Arduino pin 3.
- 
-#define 	ARDUINO_PIN_5_PWM_DEV   PWM_DEV(0)
- 	PWM device for Arduino pin 5.
- 
-#define 	ARDUINO_PIN_5_PWM_CHAN   1
- 	PWM channel for Arduino pin 5.
- 
-#define 	ARDUINO_PIN_6_PWM_DEV   PWM_DEV(0)
- 	PWM device for Arduino pin 6.
- 
-#define 	ARDUINO_PIN_6_PWM_CHAN   2
- 	PWM channel for Arduino pin 6.
- 
-#define 	ARDUINO_PIN_9_PWM_DEV   PWM_DEV(0)
- 	PWM device for Arduino pin 9.
- 
-#define 	ARDUINO_PIN_9_PWM_CHAN   3
- 	PWM channel for Arduino pin 9.
- 
-#define 	ARDUINO_PIN_10_PWM_DEV   PWM_DEV(1)
- 	PWM device for Arduino pin 10.
- 
-#define 	ARDUINO_PIN_10_PWM_CHAN   0
- 	PWM channel for Arduino pin 10.
- 
-#define 	ARDUINO_PIN_11_PWM_DEV   PWM_DEV(1)
- 	PWM device for Arduino pin 11.
- 
-#define 	ARDUINO_PIN_11_PWM_CHAN   1
- 	PWM channel for Arduino pin 11.
+#define 	ARDUINO_PIN_3_PWM_DEV   PWM_DEV(0)		// PWM device for Arduino pin 3.
+#define 	ARDUINO_PIN_3_PWM_CHAN   0				// PWM channel for Arduino pin 3.
+#define 	ARDUINO_PIN_5_PWM_DEV   PWM_DEV(0)		// PWM device for Arduino pin 5.
+#define 	ARDUINO_PIN_5_PWM_CHAN   1				// PWM channel for Arduino pin 5.
+#define 	ARDUINO_PIN_6_PWM_DEV   PWM_DEV(0)		// PWM device for Arduino pin 6.
+#define 	ARDUINO_PIN_6_PWM_CHAN   2				// PWM channel for Arduino pin 6.
+#define 	ARDUINO_PIN_9_PWM_DEV   PWM_DEV(0)		// PWM device for Arduino pin 9.
+#define 	ARDUINO_PIN_9_PWM_CHAN   3				// PWM channel for Arduino pin 9.
+#define 	ARDUINO_PIN_10_PWM_DEV   PWM_DEV(1)		// PWM device for Arduino pin 10.
+#define 	ARDUINO_PIN_10_PWM_CHAN   0				// PWM channel for Arduino pin 10.
+#define 	ARDUINO_PIN_11_PWM_DEV   PWM_DEV(1)		// PWM device for Arduino pin 11.
+#define 	ARDUINO_PIN_11_PWM_CHAN   1				// PWM channel for Arduino pin 11.
  
 Macro Definition Documentation
-#define ARDUINO_A0   ADC_LINE(0)
-ADC line for Arduino pin A0.
+#define ARDUINO_A0   ADC_LINE(0)					// ADC line for Arduino pin A0.
 
 Definition at line 85 of file arduino_iomap.h.
 
@@ -610,3 +546,4 @@ Definition at line 25 of file arduino_iomap.h.
 
 
 ```
+# [추가예정]
