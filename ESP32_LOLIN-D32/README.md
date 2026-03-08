@@ -14,6 +14,7 @@
 
 ***
 # [설명서]
+* Tools → Board → LOLIN D32
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
 *
 
