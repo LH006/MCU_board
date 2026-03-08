@@ -23,8 +23,8 @@
 ![](img/2.png)
 
 # [회로도]
-![보드](img/WenosD1R32_.jpg)
-![](img/1.png)
+![보드](img/d32_v1.0.0_1_16x16.jpg)
+![보드](img/d32_v1.0.0_2_16x16.jpg)
 ***
 # [보드 구성]
 * ESP32-WROOM-32 module
