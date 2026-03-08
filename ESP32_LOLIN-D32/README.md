@@ -26,6 +26,24 @@
 ![](img/1.png)
 ***
 # [보드 구성]
+* ESP32-WROOM-32 module
+* Flash Memory: 4 MB (some versions have 16 MB)
+* SRAM: 520 KB
+* Connectivity:
+   * Wi-Fi 802.11 b/g/n
+   * Bluetooth v4.2 BR/EDR and BLE
+* Operating Voltage: 3.3 V logic
+* USB-to-Serial: CP2104 or CH340C (depends on version)
+   * Power Supply:
+   * USB 5 V
+   * LiPo battery (with built-in charger)
+* Battery Charging: Integrated Li-ion/LiPo charger (via JST-PH connector)
+* GPIO Pins: 34 (some reserved for internal functions)
+* Analog Inputs: 12-bit ADC (up to 18 channels)
+* DAC Outputs: 2 channels (8-bit)
+* PWM: Up to 16 channels
+* I²C, SPI, UART: Multiple hardware interfaces
+
 * Arduino Uno Shield와 호환
 * 6개의 ADC 채널
 * 2개의 DAC 채널
