@@ -43,14 +43,6 @@
 * DAC Outputs: 2 channels (8-bit)
 * PWM: Up to 16 channels
 * I²C, SPI, UART: Multiple hardware interfaces
-/////////////////////////////////////////
-* Arduino Uno Shield와 호환
-* 6개의 ADC 채널
-* 2개의 DAC 채널
-* PWM 장치 2개, 총 7개 채널
-* 1 x SPI 장치
-* 1 x I2C 장치
-* 2개의 UART 장치
 
 # [라이브러리]
 * [WiFiManager](https://github.com/tzapu/WiFiManager)
