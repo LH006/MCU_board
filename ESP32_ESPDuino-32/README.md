@@ -58,7 +58,7 @@
 
 # [핀 배열]
 ![](img/3_Pinout_D1_R32.png)
-* Pins_Arduino.h
+* \packages\esp32\hardware\esp32\3.3.7\variants\d-duino-32
 ```
 #ifndef Pins_Arduino_h
 #define Pins_Arduino_h
