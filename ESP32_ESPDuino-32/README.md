@@ -26,6 +26,17 @@
 ![](img/1.png)
 ***
 # [보드 구성]
+* MCU: ESP32-WROOM-32 (dual-core Xtensa LX6, up to 240 MHz)
+* Connectivity: Wi-Fi 802.11 b/g/n, Bluetooth v4.2 (BR/EDR + BLE)
+* Form Factor: Arduino UNO–style pin layout (can use many UNO shields)
+* Flash: Typically 4 MB
+* GPIO: 36 pins (some multiplexed)
+* USB-UART: CH340G or CP2102 (depends on version)
+* Power: 5 V via USB or VIN pin, onboard 3.3 V regulator
+
+
+* ///////////////////////////////////////////////
+
 * Arduino Uno Shield와 호환
 * 6개의 ADC 채널
 * 2개의 DAC 채널
