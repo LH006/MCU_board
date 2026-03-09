@@ -8,7 +8,7 @@
 * [ESP32_LOLIN-D32](https://github.com/LH006/MCU_board/tree/main/ESP32_LOLIN-D32)
 
 * [ESP8266_D1-Mini](https://github.com/LH006/MCU_board/tree/main/ESP8266_D1-Mini)
-* [ESP8266_NodeMCU V1.0 (ESP-12E Module)](https://github.com/LH006/MCU_board/tree/main/ESP8266_NodeMCU V1.0 (ESP-12E Module))
+* [ESP8266_NodeMCU V1.0 (ESP-12E Module)](https://github.com/LH006/MCU_board/tree/main/ESP8266_NodeMCU%20V1.0%20(ESP-12E%20Module))
 
 * [ATmega328_Arduino-Nano](https://github.com/LH006/MCU_board/tree/main/ATmega328_Arduino-Nano)
 * [ATmega328_Arduino-Pro-Mini](https://github.com/LH006/MCU_board/tree/main/ATmega328_Arduino-Pro-Mini)
