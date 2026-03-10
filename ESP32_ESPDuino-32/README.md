@@ -15,7 +15,7 @@
 ***
 # [설명서]
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
-* Tools → Board → ESP32 Arduino → ESPDuino-32
+* Tools → Board → ESP32 Arduino → DOIT ESPDuino-32
 * Wemos D1 R32
 
 ***
