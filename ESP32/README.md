@@ -48,6 +48,7 @@
 * Pin 사용법 예제(https://docs.espressif.com/projects/arduino-esp32/en/latest/libraries.html)
 
 ### 모두 핀
+```
 * Analog inputs 12bit(0~3V)
 * Analog outputs 8bit(0~3V)
 * GPIO 0    //ADC2_CH1  //터치1 //RTC11 //PWM가능 //인터럽트 가능
@@ -90,6 +91,7 @@
 * GPIO 37   //ADC1_CH1  //입력전용  //내부풀업 안됨     
 * GPIO 38   //입력전용  //내부풀업 안됨
 * GPIO 39   //ADC1_CH3  //RTC3  //입력전용  //내부풀업 안됨     //인터럽트 가능
+```
 * ////////////////////////////////////////////
 ### 내부 터치 센서는 다음의 GPIO에 연결
 * T0 (GPIO 4)
