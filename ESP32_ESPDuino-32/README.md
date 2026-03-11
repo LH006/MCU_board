@@ -29,7 +29,7 @@
 
 
 * <img src="img/90_0.png"
- width="100px" height="" title="크기변경">
+ width="10000px" height="" title="크기변경">
 
 # [회로도]
 ![보드](img/WenosD1R32_.jpg)
