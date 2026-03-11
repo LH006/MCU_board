@@ -24,7 +24,7 @@
 ![](img/2.png)
 
 # [보드선택]
-* ESP Dev Module
+* 보드 -> ESP Dev Module -> 선택
 ![](img/90_0.png)
 
 # [회로도]
