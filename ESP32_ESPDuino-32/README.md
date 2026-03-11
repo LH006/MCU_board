@@ -28,7 +28,8 @@
 ![](img/90_0.png)
 
 
-* 앞<img src="img/90_0.png", width="450px" height="300px" title="크기변경"> 뒤
+* <img src="img/90_0.png"
+ width="450px" height="300px" title="크기변경">
 
 # [회로도]
 ![보드](img/WenosD1R32_.jpg)
