@@ -1,4 +1,5 @@
 # ESP duino-32
+* ##### d1_uno32
 * ##### Wemos D1 R32
 * ##### DOIT ESPDUINO-32(ESP-WROOM-32)
 ***
@@ -16,8 +17,11 @@
 ***
 # [설명서]
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
-* Tools → Board → ESP32 Arduino → DOIT ESPDuino-32
-* Wemos D1 R32
+* Tools → Board → ESP32 Arduino
+* → d1_uno32
+* → DOIT ESPDuino-32
+* → Wemos D1 R32
+
 
 ***
 # [보드]
