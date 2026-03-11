@@ -28,8 +28,13 @@
 ![](img/90_0.png)
 
 
-* <img src="img/90_0.png"
- width="500px" height="" title="크기변경">
+
+# 이미지
+* <p align="center">
+  <a href="img/90_0.png" target="_blank"><img  style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<br>
+</p>
+
 
 # [회로도]
 ![보드](img/WenosD1R32_.jpg)
