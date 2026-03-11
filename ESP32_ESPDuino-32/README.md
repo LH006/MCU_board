@@ -1,4 +1,4 @@
-# ESPDuino-32
+# ESP duino-32
 * ##### Wemos D1 R32
 * ##### DOIT ESPDUINO-32(ESP-WROOM-32)
 ***
