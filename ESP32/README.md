@@ -92,8 +92,8 @@
 * GPIO 38   //입력전용  //내부풀업 안됨
 * GPIO 39   //ADC1_CH3  //RTC3  //입력전용  //내부풀업 안됨     //인터럽트 가능
 ```
-* ////////////////////////////////////////////
-### 내부 터치 센서는 다음의 GPIO에 연결
+
+### [# 내부 터치 센서]
 * T0 (GPIO 4)
 * T1 (GPIO 0)
 * T2 (GPIO 2)
@@ -105,7 +105,7 @@
 * T8 (GPIO 33)
 * T9 (GPIO 32)
 
-### ESP-WROOM-32 칩에 내장된 SPI Flash에 연결되어 있기 때문에 다른 용도로 사용하는걸 권장하지 않는다.
+### [# SPI] ESP-WROOM-32
 * GPIO 6 (SCK/CLK)
 * GPIO 7 (SDO/SD0)
 * GPIO 8 (SDI/SD1)
@@ -113,7 +113,7 @@
 * GPIO 10 (SWP/SD3)
 * GPIO 11 (CSC/CMD)
 
-### I2C 아두이노 IDE에서 ESP32를 사용할 때는 다음의 디폴트 핀을 사용해야만 한다.
+### [# I2C]
 * GPIO 21 (SDA)
 * GPIO 22 (SCL)
 ```
@@ -122,7 +122,7 @@
 #define ARDUINO_PIN_21  GPIO22      // (SCL)
 
 ```
-### GPIO 34~39는 PWM을 만들 수 없다)
+### GPIO 34~39는 PWM을 만들 수 없음
 * GPIO 34 //입력전용 //내부풀업 안됨
 * GPIO 35 //입력전용 //내부풀업 안됨
 * GPIO 36 //입력전용 //내부풀업 안됨
@@ -130,10 +130,11 @@
 * GPIO 38 //입력전용 //내부풀업 안됨
 * GPIO 39 //입력전용 //내부풀업 안됨
 
-### ADC (Analog-to-Digital Converter)
- ESP32는 18개의 12-bit ADC 채널
- (ESP8266의 경우는 1개의 10-bit ADC만 가지고 있음)
- 다음의 GPIO 는 각각 해당 ADC 채널로 사용될 수 있다.
+### [# ADC] (
+* Analog-to-Digital Converter
+* ESP32는 18개의 12-bit ADC 채널
+* (ESP8266의 경우는 1개의 10-bit ADC만 가지고 있음)
+
  * ADC1_CH0 (GPIO 36)
  * ADC1_CH1 (GPIO 37)
  * ADC1_CH2 (GPIO 38)
