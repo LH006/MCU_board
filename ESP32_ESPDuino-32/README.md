@@ -30,8 +30,8 @@
 
 
 # 이미지
-* <p align="center">
-  <a href="img/90_0.png" target="_blank"><img  style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<p align="center">
+  <a href="/img/90_0.png" target="_blank"><img  style="width: 500px; height: 54px;" width="250" height="54" /></a>
 <br>
 </p>
 
