@@ -27,6 +27,9 @@
 * 보드 -> ESP Dev Module -> 선택
 ![](img/90_0.png)
 
+
+ <img src="img/90_0.png", width="450px" or "40%" height="300px" title="크기변경">
+
 # [회로도]
 ![보드](img/WenosD1R32_.jpg)
 ![](img/1.png)
