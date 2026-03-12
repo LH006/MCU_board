@@ -15,8 +15,10 @@
 * [ESP32 내용](https://github.com/LH006/MCU_board/tree/main/ESP32)
 
 ***
-# [모듈]
+# [종류]
 * ESP32-WROOM-32 module
+* 
+*
 ![](img/2.png)
 
 # [회로도]
