@@ -16,9 +16,9 @@
 
 ***
 # [종류]
-* ESP32-WROOM-32 module
-* 
-*
+* ESP32-S
+* ESP32-S2
+* ESP32-S3
 ![](img/2.png)
 
 # [회로도]
