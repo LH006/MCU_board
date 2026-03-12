@@ -126,7 +126,58 @@ void loop() {
   delay(1000); // 1초마다 측정
 }
 ```
----
+
+# [배터리 잔량]
+```C++
+const int batteryPin = 35;
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  // 1. 전압 측정 (이전 단계 코드 활용)
+  int adcValue = analogRead(batteryPin);
+  float voltage = (adcValue * 3.3 * 2.0) / 4095.0;
+
+  // 2. 배터리 잔량(%) 계산
+  int percentage = 0;
+
+  // 리튬 배터리 전압 구간별 매핑 (대략적인 수치)
+  if (voltage >= 4.2) {
+    percentage = 100;
+  } else if (voltage >= 3.7) {
+    // 4.2V(100%) ~ 3.7V(50%) 구간
+    percentage = mapFloat(voltage, 3.7, 4.2, 50, 100);
+  } else if (voltage >= 3.3) {
+    // 3.7V(50%) ~ 3.3V(0%) 구간
+    percentage = mapFloat(voltage, 3.3, 3.7, 0, 50);
+  } else {
+    percentage = 0;
+  }
+
+  // 3. 결과 출력
+  Serial.print("Voltage: ");
+  Serial.print(voltage);
+  Serial.print("V | Remaining: ");
+  Serial.print(percentage);
+  Serial.println("%");
+
+  delay(2000);
+}
+
+// 실수(float)를 위한 매핑 함수
+float mapFloat(float x, float in_min, float in_max, float out_min, float out_max) {
+  float result = (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  return constrain(result, out_min, out_max);
+}
+
+
+// 전압 범위 설정: 리튬 배터리는 보통 4.2V가 완충, 3.3V 내외가 방전 상태입니다.
+비선형 특성: 배터리는 3.7V 근처에서 전압이 오래 유지되다가 그 이하로 떨어지면 급격히 방전됩니다. 위 코드는 이를 반영하여 3.7V를 50% 기준으로 잡았습니다.
+// 멀티샘플링: ADC 값의 미세한 떨림을 줄이려면 analogRead를 10번 정도 반복해 평균값을 내는 것이 좋습니다.
+// 보정: 실제 테스터기로 측정한 전압과 시리얼 모니터에 뜨는 값이 다르다면 3.3이나 2.0 값을 소수점 단위로 미세하게 조정하세요.
+```
 
 
 
