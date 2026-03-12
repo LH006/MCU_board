@@ -28,7 +28,8 @@
 
 ---
 
-# ESP32-S(또는 ESP32-WROOM-32S)
+# ESP32-S
+* (또는 ESP32-WROOM-32S)
 * 통신: 2.4GHz Wi-Fi (802.11 b/g/n)
 * Bluetooth 4.2/LE
 * 프로세서: Xtensa 듀얼 코어 32비트 LX6
