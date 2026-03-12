@@ -26,6 +26,20 @@
 ![](img/1.png)
 ***
 
+---
+
+# ESP32-S(또는 ESP32-WROOM-32S)
+* 통신: 2.4GHz Wi-Fi (802.11 b/g/n)
+* Bluetooth 4.2/LE
+* 프로세서: Xtensa 듀얼 코어 32비트 LX6
+* 최대 240MHz 동작
+* 메모리: 일반적으로 4MB SPI 플래시 내장
+* 통합 저전력 SoC로 낮은 전력 소비
+* 풍부한 페리페럴(ADC, DAC, I2C, SPI, UART 등)
+---
+
+
+
 # [보드 구성]
 * Arduino Uno Shield와 호환
 * 6개의 ADC 채널
