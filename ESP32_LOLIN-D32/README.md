@@ -97,4 +97,37 @@
 * 아날로그 출력(DAC): 2개 (25, 26).
 * 특수 기능: 배터리 전압 측정을 위해 내부적으로
 * GPIO 35번에 분압 저항이 연결되어 있어 외부 회로 없이 배터리 잔량을 확인가능
+
+# [배터리 전압 확인]
+---C++
+// LOLIN D32는 GPIO 35번에 전압 분배 회로가 연결되어 있습니다.
+const int batteryPin = 35;
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  // ADC 값 읽기 (0 ~ 4095)
+  int adcValue = analogRead(batteryPin);
+  
+  // ADC 값을 전압(V)으로 변환
+  // 1. ESP32의 기준 전압은 보통 3.3V입니다.
+  // 2. LOLIN D32 내장 회로는 전압을 1/2로 낮추므로, 다시 2를 곱해줘야 합니다.
+  // 3. 12비트 ADC이므로 4095로 나눕니다.
+  float voltage = (adcValue * 3.3 * 2.0) / 4095.0;
+
+  Serial.print("ADC Value: ");
+  Serial.print(adcValue);
+  Serial.print(" | Battery Voltage: ");
+  Serial.print(voltage);
+  Serial.println(" V");
+
+  delay(1000); // 1초마다 측정
+}
+---
+
+
+
+
 # [추가예정]
