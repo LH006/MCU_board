@@ -98,61 +98,41 @@
 * 특수 기능: 배터리 전압 측정을 위해 내부적으로
 * GPIO 35번에 분압 저항이 연결되어 있어 외부 회로 없이 배터리 잔량을 확인가능
 
-# [배터리 전압 확인]
+# [배터리 잔량]
 ```C++
-// LOLIN D32는 GPIO 35번에 전압 분배 회로가 연결되어 있습니다.
-const int batteryPin = 35;
-
-void setup() {
-  Serial.begin(115200);
-}
-
-void loop() {
+//////////////////////////////////////////////////////////////////
+float Battery()
+{
+  // 1. 전압 측정 (이전 단계 코드 활용)
   // ADC 값 읽기 (0 ~ 4095)
-  int adcValue = analogRead(batteryPin);
-  
+  int adcValue = analogRead(PIN_BATTERY_CHECK);
+
   // ADC 값을 전압(V)으로 변환
   // 1. ESP32의 기준 전압은 보통 3.3V입니다.
   // 2. LOLIN D32 내장 회로는 전압을 1/2로 낮추므로, 다시 2를 곱해줘야 합니다.
   // 3. 12비트 ADC이므로 4095로 나눕니다.
   float voltage = (adcValue * 3.3 * 2.0) / 4095.0;
 
-  Serial.print("ADC Value: ");
-  Serial.print(adcValue);
-  Serial.print(" | Battery Voltage: ");
-  Serial.print(voltage);
-  Serial.println(" V");
-
-  delay(1000); // 1초마다 측정
-}
-```
-
-# [배터리 잔량]
-```C++
-const int batteryPin = 35;
-
-void setup() {
-  Serial.begin(115200);
-}
-
-void loop() {
-  // 1. 전압 측정 (이전 단계 코드 활용)
-  int adcValue = analogRead(batteryPin);
-  float voltage = (adcValue * 3.3 * 2.0) / 4095.0;
-
-  // 2. 배터리 잔량(%) 계산
+  // 배터리 잔량(%) 계산
   int percentage = 0;
 
   // 리튬 배터리 전압 구간별 매핑 (대략적인 수치)
-  if (voltage >= 4.2) {
+  if (voltage >= 4.2)
+  {
     percentage = 100;
-  } else if (voltage >= 3.7) {
+  }
+  else if (voltage >= 3.7)
+  {
     // 4.2V(100%) ~ 3.7V(50%) 구간
     percentage = mapFloat(voltage, 3.7, 4.2, 50, 100);
-  } else if (voltage >= 3.3) {
+  }
+  else if (voltage >= 3.3)
+  {
     // 3.7V(50%) ~ 3.3V(0%) 구간
     percentage = mapFloat(voltage, 3.3, 3.7, 0, 50);
-  } else {
+  }
+  else
+  {
     percentage = 0;
   }
 
@@ -162,8 +142,7 @@ void loop() {
   Serial.print("V | Remaining: ");
   Serial.print(percentage);
   Serial.println("%");
-
-  delay(2000);
+  return voltage;
 }
 //////////////////////////////////////
 // 실수(float)를 위한 매핑 함수
@@ -173,14 +152,10 @@ float mapFloat(float x, float in_min, float in_max, float out_min, float out_max
   return constrain(result, out_min, out_max);
 }
 
-
 // 전압 범위 설정: 리튬 배터리는 보통 4.2V가 완충, 3.3V 내외가 방전 상태입니다.
 // 비선형 특성: 배터리는 3.7V 근처에서 전압이 오래 유지되다가 그 이하로 떨어지면 급격히 방전됩니다. 위 코드는 이를 반영하여 3.7V를 50% 기준으로 잡았습니다.
 // 멀티샘플링: ADC 값의 미세한 떨림을 줄이려면 analogRead를 10번 정도 반복해 평균값을 내는 것이 좋습니다.
 // 보정: 실제 테스터기로 측정한 전압과 시리얼 모니터에 뜨는 값이 다르다면 3.3이나 2.0 값을 소수점 단위로 미세하게 조정하세요.
 ```
-
-
-
 
 # [추가예정]
