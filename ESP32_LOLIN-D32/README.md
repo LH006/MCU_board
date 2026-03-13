@@ -60,36 +60,44 @@
 ![](img/.png)
 * arduino_iomap.h
 ```
+////////////////////////////////////////////////////////////////////////////////
 // 보드
-// 좌쪽
-// X // GPIO36 //ADC1_CH0 // 센서VP //입력전용
-// X // GPIO39 //ADC1_CH3 // 센서VN //입력전용
-// X // GPIO34 //ADC1_CH6 //입력전용
-// R4 // GPIO32 //ADC1_CH4
-// R5 // GPIO33 //ADC1_CH5
-// R6 // GPIO25 //ADC2_CH8 //DAC1
-// R7 // GPIO26 //ADC2_CH9 //DAC2
-// R8 // GPIO27 //ADC2_CH7
-// R1 // GPIO14 //ADC2_CH6
-// R2 // GPIO12 //ADC2_CH5
-// R3 // GPIO13 //ADC2_CH4
-
-// 우쪽
-//  L1 //GPIO23 //L1
-//  L2 //GPIO22 //L2
-//  X //GPIO1 // TXD0
-//  X //GPIO3 // RXD0
-//  L3 //GPIO21 //L3
-//  L4 //GPIO19 //L4
-//  X //GPIO18
-// 내장LED //GPIO5
-//  X //GPIO17 //TXD2
-//  X //GPIO16 //RXD2
-//  X //GPIO4 //ADC2_CH0
-//  X //GPIO0 //ADC2_CH1
-//  X //GPIO2 //ADC2_CH2
-//  X //GPIO15 //ADC2_CH3
-
+////////////////////////////////////////////////////////////////////////////////
+// 핀 좌측
+// 01. 3V
+// 02. RS
+// 03. VP
+// 04. VN
+// 05. GPIO34 //ADC1_CH6 //입력전용
+// 06. GPIO32 //ADC1_CH4
+// 07. GPIO33 //ADC1_CH5
+// 08. GPIO25 //ADC2_CH8 //DAC1
+// 09. GPIO26 //ADC2_CH9 //DAC2
+// 10. GPIO27 //ADC2_CH7
+// 11. GPIO14 //ADC2_CH6
+// 12. GPIO12 //ADC2_CH5
+// 13. GPIO13 //ADC2_CH4
+// 14. EN
+// 15. USB
+// 16. BAT
+////////////////////////////////////////////////////////////////////////////////
+// 핀 우측
+// 01. GND
+// 02. GPIO23 //L1
+// 03. GPIO22 //L2
+// 04. GPIO1 // TXD0
+// 05. GPIO3 // RXD0
+// 06. GPIO21 //L3
+// 07. GPIO19 //L4
+// 08. GPIO18
+// 09. GPIO5	//내장LED
+// 10. GPIO17 //TXD2
+// 11. GPIO16 //RXD2
+// 12. GPIO4 //ADC2_CH0
+// 13. GPIO0 //ADC2_CH1
+// 14. GPIO2 //ADC2_CH2
+// 15. GPIO15 //ADC2_CH3
+// 16. GND
 ```
 
 * 디지털 I/O: 22개
