@@ -1,8 +1,8 @@
-# [MCU]
+# [# MCU]
 * [ESP32](https://github.com/LH006/MCU_board/tree/main/ESP32)
 * [ESP8266](https://github.com/LH006/MCU_board/tree/main/ESP8266)
 
-# [보드종류]
+# [# 보드종류]
 * [ESP32_CAM](https://github.com/LH006/MCU_board/tree/main/ESP32_CAM)
 * [ESP32_ESPDuino-32](https://github.com/LH006/MCU_board/tree/main/ESP32_ESPDuino-32)
 * [ESP32_LOLIN-D32](https://github.com/LH006/MCU_board/tree/main/ESP32_LOLIN-D32)
