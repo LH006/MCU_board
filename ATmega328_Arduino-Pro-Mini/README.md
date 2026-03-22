@@ -14,21 +14,21 @@
 ## [PIN MAP]
 ![보드](img/991FCB355AB2EA8F2B.png)
 
-Physical Pin(물리적인 핀) 보드 숫자
-1 // FTDI-TXD		// PD1
-0 // FTDI-RXD		// PD0
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
+### Physical Pin(물리적인 핀) 보드 숫자
+* 1 // FTDI-TXD		// PD1
+* 0 // FTDI-RXD		// PD0
+* 2
+* 3
+* 4
+* 5
+* 6
+* 7
+* 8
+* 9
+* 10
+* 11
+* 12
+* 13
 
 A0
 A1
@@ -44,12 +44,12 @@ FTDI-GND
 
 
 
-출력:14개(PWM 6개)
-6개의 PWM 포트(D3, D5, D6, D9, D10, D11)
-PWM=3,5,6,9,10,11
-1=PWM
-9=PWM
-10=PWM
+### 출력:14개(PWM 6개)
+* 6개의 PWM 포트(D3, D5, D6, D9, D10, D11)
+* PWM=3,5,6,9,10,11
+* 1=PWM
+* 9=PWM
+* 10=PWM
 13=PWM
 14=PWM
 15=PWM
